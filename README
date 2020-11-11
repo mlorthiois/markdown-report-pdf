@@ -1,0 +1,1 @@
+To render your markdown file, use the command `make file={file.md}`

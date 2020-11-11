@@ -1,0 +1,69 @@
+\documentclass[twoside, 11pt]{article}
+\usepackage[top=3cm,bottom=3cm,inner=3cm,outer=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{lipsum}
+\usepackage{lscape}
+\usepackage{hyperref}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{listings}
+
+\usepackage[scaled=0.95]{helvet}
+\renewcommand\familydefault{\sfdefault}
+\addto\captionsfrench{\renewcommand{\tablename}{{\scshape Tableau}}}
+
+\usepackage{titlesec}
+\usepackage{xcolor}
+\definecolor{Rouge}{HTML}{78362A}
+\definecolor{Bleu}{HTML}{114D74}
+
+
+\titleformat{\section}
+  [block]
+  {\color{Rouge}\Large\scshape\bfseries}
+  {\color{Rouge}\thesection}
+  {\baselineskip}
+  {}
+  [\hrule \vspace{0.5em}]
+
+\titleformat{\subsection}
+  [block]
+  {\color{Bleu}\large\bfseries}
+  {\color{Bleu}\thesubsection}
+  {\baselineskip}
+  {}
+
+
+  \setlength{\parindent}{0pt} 
+
+  \providecommand{\tightlist}{%
+    \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\begin{document}
+
+$name$ \hfill $classe$ \\
+$matiere$ \hfill \today\\
+\hrule
+\vspace{0.1cm}
+\begin{center}
+\large $title$
+\end{center}
+\vspace{0.1cm}
+\hrule
+
+
+  $body$
+
+
+  
+  % \bibliographystyle{unsrt}
+  % \bibliography{./reference.bib}
+
+
+\end{document}
