@@ -1,2 +1,2 @@
 %.pdf: %.md
-	pandoc $< -f markdown -o $@ --template template.tex
+	pandoc $< -f markdown --template template.tex -o $@ --highlight-style tango
